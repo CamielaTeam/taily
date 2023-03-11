@@ -99,7 +99,7 @@ export default function AddPet() {
                                 <ToggleButton value="female">Hembra</ToggleButton>
                                 <ToggleButton value="male">Macho</ToggleButton>
                             </ToggleButtonGroup>
-                            <Link href="/inicio">
+                            <Link href="/mascota-agregada">
                                 <Button variant="contained" fullWidth>Añadir mascota</Button>
                             </Link>
                         </Stack>
