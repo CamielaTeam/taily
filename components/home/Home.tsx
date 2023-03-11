@@ -44,9 +44,9 @@ export default function Home() {
                                     </Link>
                                 </Stack>
                                 <Stack direction="row" spacing={4}>
-                                    <Card >
-                                        <CardContent>
-                                            <Stack direction="row" spacing={2}>
+                                    <Card>
+                                        <CardContent >
+                                            <Stack direction="row" spacing={2} minWidth="350px" maxWidth="100%">
                                                 <figure className={styles.pet}>
                                                     <Image
                                                         src={PinkCat}
@@ -71,7 +71,7 @@ export default function Home() {
                                     </Card>
                                     <Card >
                                         <CardContent>
-                                            <Stack direction="row" spacing={2}>
+                                            <Stack direction="row" spacing={2} minWidth="350px" maxWidth="100%">
                                                 <figure className={styles.pet}>
                                                     <Image
                                                         src={BlueCat}
