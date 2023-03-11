@@ -2,9 +2,9 @@ import Image from 'next/image'
 import { Button, Grid, Link, Stack, TextField, Typography } from "@mui/material";
 
 import LoginImg from "@/images/login.png"
-import styles from "./login.module.scss"
+import styles from "./signup.module.scss"
 
-export default function Login() {
+export default function Signup() {
     return (
         <Grid container spacing={2} className={styles.container}>
             <Grid item xs={7}>
@@ -20,22 +20,25 @@ export default function Login() {
                 <Stack spacing={2} sx={{ height: "100%" }} padding={4}>
                     <Stack direction="row" spacing={2} alignItems="center" justifyContent="right">
                         <div>
-                            ¿Aún no tienes cuenta?
+                            ¿Ya tienes cuenta?
                         </div>
-                        <Link href="/registro">Registrarte</Link>
+                        <Link href="/login">Inicia sesión</Link>
                     </Stack>
                     <Stack spacing={2} alignItems="center" justifyContent="center" sx={{ height: "100%" }} maxWidth="300px" alignSelf="center">
                         <Stack alignItems="center">
                             <Typography variant="h5" textAlign="center">
-                                Estamos felices de verte nuevamente
+                                Te  ayudaremos a cuidar de tu mascota
                             </Typography>
                             <Typography variant="h6" >
-                                Inicia sesión
+                                Registrarme
                             </Typography>
                         </Stack>
-
-                        <TextField id="standard-basic" label="Correo" variant="standard" fullWidth />
-                        <TextField id="standard-basic" label="Contraseña" variant="standard" fullWidth />
+                        <TextField id="standard-basic" label="Nombre" variant="standard" fullWidth />
+                        <TextField id="standard-basic" label="Correo" variant="standard" fullWidth type="email" />
+                        <Stack direction="row" spacing={2} >
+                            <TextField id="signup-password" label="Contraseña" variant="standard" fullWidth type="password" />
+                            <TextField id="signup-password" label="Repite contraseña" variant="standard" fullWidth type="password" />
+                        </Stack>
                         <Button variant="contained" fullWidth>Ingresar</Button>
                     </Stack>
                 </Stack>
