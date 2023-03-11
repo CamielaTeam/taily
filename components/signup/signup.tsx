@@ -39,7 +39,9 @@ export default function Signup() {
                             <TextField id="signup-password" label="Contraseña" variant="standard" fullWidth type="password" />
                             <TextField id="signup-password" label="Repite contraseña" variant="standard" fullWidth type="password" />
                         </Stack>
-                        <Button variant="contained" fullWidth>Ingresar</Button>
+                        <Link href="/agregar-mascota" width="100%">
+                            <Button variant="contained" fullWidth>Ingresar</Button>
+                        </Link>
                     </Stack>
                 </Stack>
             </Grid>

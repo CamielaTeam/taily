@@ -36,7 +36,9 @@ export default function Login() {
 
                         <TextField id="standard-basic" label="Correo" variant="standard" fullWidth />
                         <TextField id="standard-basic" label="Contraseña" variant="standard" fullWidth />
-                        <Button variant="contained" fullWidth>Ingresar</Button>
+                        <Link href="/agregar-mascota" width="100%">
+                            <Button variant="contained" fullWidth>Ingresar</Button>
+                        </Link>
                     </Stack>
                 </Stack>
             </Grid>
