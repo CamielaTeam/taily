@@ -1,0 +1,23 @@
+.container {
+  .background {
+    position: relative;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.detail {
+  .pet-image {
+    position: relative;
+    width: 100%;
+    max-width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 10rem;
+    overflow: hidden;
+  }
+}
