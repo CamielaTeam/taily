@@ -1,20 +1,21 @@
 import Image from 'next/image'
 import { Card, CardContent, Stack, Typography } from "@mui/material";
 
-import styles from "./appointment-card.module.scss"
-import ScheduleImg from "@/images/schedule.png"
+import styles from "./treatment-card.module.scss"
+import MedicineImg from "@/images/medicine.png"
 
 type Props = {
-    appointment: {
-        name: string,
+    treatment: {
         pet: string,
-        doctor: string,
-        date: string,
-        hour: string
+        medicine: string,
+        dose: string,
+        frequencyHours: number,
+        startDate: string,
+        endDate: string,
     }
 }
 
-export default function AppointmentCard({ appointment }: Props) {
+export default function TreatmentCard({ treatment }: Props) {
 
     return (
         <Card className={styles.container}>
@@ -22,21 +23,21 @@ export default function AppointmentCard({ appointment }: Props) {
                 <Stack direction="row" spacing={2} minWidth="400px" maxWidth="100%">
                     <figure className={styles.schedule}>
                         <Image
-                            src={ScheduleImg}
-                            alt="PinkCat"
+                            src={MedicineImg}
+                            alt="Medicine"
                             width={50}
                             height={50}
                         />
                     </figure>
                     <Stack>
                         <Typography variant="h5">
-                            {appointment.name}
+                            {treatment.medicine}
                         </Typography>
                         <Typography variant="subtitle1">
-                            {appointment.doctor}
+                            {treatment.dose} | Cada {treatment.frequencyHours} horas
                         </Typography>
                         <Typography variant="subtitle1" color="gray">
-                            {appointment.date} | {appointment.hour}
+                            Empieza {treatment.startDate} | Finaliza {treatment.startDate}
                         </Typography>
                     </Stack>
                 </Stack>
