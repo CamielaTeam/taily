@@ -19,7 +19,7 @@ export default function AppointmentCard({ appointment }: Props) {
     return (
         <Card className={styles.container}>
             <CardContent>
-                <Stack direction="row" spacing={2} minWidth="400px" maxWidth="100%">
+                <Stack direction="row" spacing={2} minWidth="300px" maxWidth="100%">
                     <figure className={styles.schedule}>
                         <Image
                             src={ScheduleImg}
