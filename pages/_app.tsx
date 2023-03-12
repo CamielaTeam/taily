@@ -1,5 +1,8 @@
 import type { AppProps } from 'next/app'
 import { Outfit } from 'next/font/google'
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+
 
 import '@/styles/globals.css'
 import { createTheme, ThemeProvider } from '@mui/material';
@@ -27,7 +30,9 @@ export default function App({ Component, pageProps }: AppProps) {
 
     <div className={outfit.className}>
       <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
+        <LocalizationProvider dateAdapter={AdapterDayjs}>
+          <Component {...pageProps} />
+        </LocalizationProvider>
       </ThemeProvider>
     </div>
 
