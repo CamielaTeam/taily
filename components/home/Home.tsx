@@ -46,31 +46,34 @@ export default function Home() {
                                     </Link>
                                 </Stack>
                                 <Stack direction="row" spacing={4}>
-                                    <Card>
-                                        <CardContent >
-                                            <Stack direction="row" spacing={2} minWidth="350px" maxWidth="100%">
-                                                <figure className={styles.pet}>
-                                                    <Image
-                                                        src={PinkCat}
-                                                        alt="PinkCat"
-                                                        width={130}
-                                                        height={130}
-                                                    />
-                                                </figure>
-                                                <Stack>
-                                                    <Typography variant="h4">
-                                                        Chloe
-                                                    </Typography>
-                                                    <Typography variant="subtitle1">
-                                                        Gata
-                                                    </Typography>
-                                                    <Typography variant="subtitle1">
-                                                        3 años
-                                                    </Typography>
+                                    <Link href="/mascotas/chloe">
+                                        <Card>
+                                            <CardContent >
+                                                <Stack direction="row" spacing={2} minWidth="350px" maxWidth="100%">
+                                                    <figure className={styles.pet}>
+                                                        <Image
+                                                            src={PinkCat}
+                                                            alt="PinkCat"
+                                                            width={130}
+                                                            height={130}
+                                                        />
+                                                    </figure>
+                                                    <Stack>
+                                                        <Typography variant="h4">
+                                                            Chloe
+                                                        </Typography>
+                                                        <Typography variant="subtitle1">
+                                                            Gata
+                                                        </Typography>
+                                                        <Typography variant="subtitle1">
+                                                            3 años
+                                                        </Typography>
+                                                    </Stack>
                                                 </Stack>
-                                            </Stack>
-                                        </CardContent>
-                                    </Card>
+                                            </CardContent>
+                                        </Card>
+                                    </Link>
+                                    <Link href="/mascotas/tail">
                                     <Card >
                                         <CardContent>
                                             <Stack direction="row" spacing={2} minWidth="350px" maxWidth="100%">
@@ -96,6 +99,7 @@ export default function Home() {
                                             </Stack>
                                         </CardContent>
                                     </Card>
+                                    </Link>
                                 </Stack>
                             </Stack>
                         </Grid>

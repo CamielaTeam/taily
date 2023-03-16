@@ -57,52 +57,56 @@ export default function Pets() {
                         <Button variant="contained">Agregar mascota</Button>
                     </Link>
                     <Stack direction="row" spacing={2} justifyContent="center">
-                        <Card>
-                            <CardContent>
-                                <Stack alignItems="center">
-                                    <figure className={styles.pet}>
-                                        <Image
-                                            src={PinkCat}
-                                            alt="PinkCat"
-                                            width={200}
-                                            height={200}
-                                        />
-                                    </figure>
-                                    <Typography variant="h4">
-                                        Chloe
-                                    </Typography>
-                                    <Typography variant="subtitle1">
-                                        Gata
-                                    </Typography>
-                                    <Typography variant="subtitle1">
-                                        3 años
-                                    </Typography>
-                                </Stack>
-                            </CardContent>
-                        </Card>
-                        <Card>
-                            <CardContent>
-                                <Stack alignItems="center">
-                                    <figure className={styles.pet}>
-                                        <Image
-                                            src={BlueCat}
-                                            alt="BlueCat"
-                                            width={200}
-                                            height={200}
-                                        />
-                                    </figure>
-                                    <Typography variant="h4">
-                                        Tail
-                                    </Typography>
-                                    <Typography variant="subtitle1">
-                                        Gato
-                                    </Typography>
-                                    <Typography variant="subtitle1">
-                                        3 años
-                                    </Typography>
-                                </Stack>
-                            </CardContent>
-                        </Card>
+                        <Link href="/mascotas/chloe">
+                            <Card>
+                                <CardContent>
+                                    <Stack alignItems="center">
+                                        <figure className={styles.pet}>
+                                            <Image
+                                                src={PinkCat}
+                                                alt="PinkCat"
+                                                width={200}
+                                                height={200}
+                                            />
+                                        </figure>
+                                        <Typography variant="h4">
+                                            Chloe
+                                        </Typography>
+                                        <Typography variant="subtitle1">
+                                            Gata
+                                        </Typography>
+                                        <Typography variant="subtitle1">
+                                            3 años
+                                        </Typography>
+                                    </Stack>
+                                </CardContent>
+                            </Card>
+                        </Link>
+                        <Link href="/mascotas/chloe">
+                            <Card>
+                                <CardContent>
+                                    <Stack alignItems="center">
+                                        <figure className={styles.pet}>
+                                            <Image
+                                                src={BlueCat}
+                                                alt="BlueCat"
+                                                width={200}
+                                                height={200}
+                                            />
+                                        </figure>
+                                        <Typography variant="h4">
+                                            Tail
+                                        </Typography>
+                                        <Typography variant="subtitle1">
+                                            Gato
+                                        </Typography>
+                                        <Typography variant="subtitle1">
+                                            3 años
+                                        </Typography>
+                                    </Stack>
+                                </CardContent>
+                            </Card>
+                        </Link>
                     </Stack>
                 </Stack>
             </Container >
