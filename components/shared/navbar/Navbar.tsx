@@ -10,14 +10,13 @@ export default function Navbar() {
     return (
         <Stack direction="row" spacing={2} alignItems="center" justifyContent="space-between">
             <Stack direction="row" spacing={2} alignItems="center" justifyContent="left">
-                <Link href="/mascotas" underline='none' color="inherit">
+                <Link href="/" underline='none' color="inherit">
                     <Typography variant="h4" textAlign="center">
                         Taily
                     </Typography>
                 </Link>
                 <Link href="/mascotas" underline="hover">Mascotas</Link>
                 <Link href="/citas" underline="hover">Citas</Link>
-                <Link href="/tratamientos" underline="hover">Tratamientos</Link>
             </Stack>
             <Stack direction="row" spacing={2} alignItems="center" justifyContent="right">
                 <Link href="/login" underline="hover">Iniciar sesión</Link>
