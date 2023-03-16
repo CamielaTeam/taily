@@ -6,11 +6,12 @@ import ScheduleImg from "@/images/schedule.png"
 
 type Props = {
     appointment: {
-        name: string,
-        pet: string,
-        doctor: string,
+        id: string,
         date: string,
-        hour: string
+        hour: string,
+        place: string,
+        status: string,
+        pet: string,
     }
 }
 
@@ -30,10 +31,10 @@ export default function AppointmentCard({ appointment }: Props) {
                     </figure>
                     <Stack>
                         <Typography variant="h5">
-                            {appointment.name}
+                            Cita médica
                         </Typography>
                         <Typography variant="subtitle1">
-                            {appointment.doctor}
+                            {appointment.place}
                         </Typography>
                         <Typography variant="subtitle1" color="gray">
                             {appointment.date} | {appointment.hour}

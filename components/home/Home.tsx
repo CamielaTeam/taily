@@ -15,18 +15,20 @@ import TreatmentsHomeTable from '../treatments/TreatmentsHomeTable';
 export default function Home() {
 
     const APPOINTMENTS = [{
-        name: "Cita médica",
-        pet: "Tail",
-        doctor: "Jenifer Muñiz",
+        id: "1",
         date: "25 Feb 2023",
-        hour: "8:30 am"
+        hour: "9:00 am",
+        place: "Cats Lovers",
+        status: "PENDING",
+        pet: "Tail",
     },
     {
-        name: "Cita médica",
+        id: "3",
+        date: "27 Feb 2023",
+        hour: "10:00 am",
+        place: "Cats Lovers",
+        status: "PENDING",
         pet: "Chloe",
-        doctor: "Jenifer Muñiz",
-        date: "25 Feb 2023",
-        hour: "9:00 am"
     }]
 
     return (
